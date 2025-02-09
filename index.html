@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Turning Destinations into Experiences</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Comforter+Brush&family=Heebo:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" title="Read more about the blog post">
+        <h1 class="logo">EverySunday</h1>
+      </a>
+
+      <button class="nav-toggle-btn" data-nav-toggle-btn aria-label="Toggle Menu">
+        <ion-icon name="menu-outline" class="open"></ion-icon>
+        <ion-icon name="close-outline" class="close"></ion-icon>
+      </button>
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#Home" class="navbar_link">Home</a>
+          </li>
+
+          <li>
+            <a href="#about" class="navbar_link">About Us</a>
+          </li>
+
+          <li>
+            <a href="#Tours" class="navbar_link2">Tours</a>
+          </li>
+
+          <li>
+            <a href="#destinations" class="navbar_link">Destinations</a>
+          </li>
+
+          <li>
+            <a href="#blog" class="navbar_link">Blog</a>
+          </li>
+
+          <li>
+            <a href="#Contact" class="navbar_link">Contact Us</a>
+          </li>
+
+        </ul>
+        <a href="#" class="btn btn-secondary" onclick="openRegisterForm()">Booking Now</a>
+       
+        <div id="registerForm" class="modal">
+          <!-- <div class="modal-content"> -->
+           
+            <form action="#" method="post" class="register-form">
+             
+              <span class="close" onclick="closeRegisterForm()">&times;</span>
+                <h2 class="register-heading" style="text-align: -webkit-center;  font-family: 'Comforter Brush', cursive;     color: var(--mikado-yellow);">Register to Every Sunday</h2>
+                                 <!-- Register to Every Sunday</h2> -->
+              <div class="input-group">
+                <label for="reg-name">Name</label>
+                <input type="text" id="reg-name" name="name" required>
+              </div>
+              <div class="input-group">
+                <label for="reg-email">Email</label>
+                <input type="email" id="reg-email" name="email" required>
+              </div>
+              <div class="input-group">
+                <label for="reg-password">Password</label>
+                <input type="password" id="reg-password" name="password" required>
+              </div>
+                <button type="submit" class="btn btn-primary" formaction="booking page.html">Register</button>
+            </form>
+          <!-- </div> -->
+        </div>
+
+
+       
+       
+      </nav>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+      <a name="Home"></a>
+      <section class="section hero">
+        <div class="container">
+
+          <img src="./assets/images/shape-1.png" width="61" height="61" alt="Vector Shape" class="shape shape-1">
+
+          <img src="./assets/images/shape-2.png" width="56" height="74" alt="Vector Shape" class="shape shape-2">
+
+          <img src="./assets/images/shape-3.png" width="57" height="72" alt="Vector Shape" class="shape shape-3">
+
+          <div class="hero-content">
+
+            <p class="section-subtitle">Explore Your Travel</p>
+
+            <h2 class="hero-title">Turning Destinations into Experiences</h2>
+
+            <p class="hero-text">
+              Sundays are for exploring the map,and we’ll help you reach every destination on it.
+            </p>
+
+            <div class="btn-group">
+              <a href="#Contact" class="btn btn-primary" onclick="myFunction()">Contact Us</a>
+
+              <a href="#about" class="btn btn-outline">Learn More</a>
+            </div>
+
+          </div>
+
+          <figure class="hero-banner">
+            <img src="./assets/images/hero-banner.png" width="686" height="812" loading="lazy" alt="hero banner"
+              class="w-100">
+          </figure>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #DESTINATION
+      -->
+       <a name="destinations"></a>
+      <section class="section destination">
+        <div class="container">
+
+          <p class="section-subtitle">Destinations</p>
+
+          <h2 class="h2 section-title">Choose Your Place</h2>
+
+          <ul class="destination-list">
+
+            <li class="w-50">
+              <a href="#" class="destination-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/destination-1.jpg" width="1140" height="1100" loading="lazy"
+                    alt="Malé, Maldives" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <p class="card-subtitle">Malé</p>
+
+                  <h3 class="h3 card-title">Maldives</h3>
+                </div>
+
+              </a>
+            </li>
+
+            <li class="w-50">
+              <a href="#" class="destination-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/destination-2.jpg" width="1140" height="1100" loading="lazy"
+                    alt="Bangkok, Thailand" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <p class="card-subtitle">Bangkok</p>
+
+                  <h3 class="h3 card-title">Thailand</h3>
+                </div>
+
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="destination-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/destination-3.jpg" width="1110" height="480" loading="lazy"
+                    alt="Kuala Lumpur, Malaysia" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <p class="card-subtitle">Kuala Lumpur</p>
+
+                  <h3 class="h3 card-title">Malaysia</h3>
+                </div>
+
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="destination-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/destination-4.jpg" width="1110" height="480" loading="lazy"
+                    alt="Kathmandu, Nepal" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <p class="card-subtitle">Kathmandu</p>
+
+                  <h3 class="h3 card-title">Nepal</h3>
+                </div>
+
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="destination-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/destination-5.jpg" width="1110" height="480" loading="lazy"
+                    alt="Jakarta, Indonesia" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <p class="card-subtitle">Jakarta</p>
+
+                  <h3 class="h3 card-title">Indonesia</h3>
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #POPULAR
+      -->
+      <a name="Tours"></a>
+      <section class="section popular">
+        <div class="container">
+
+          <p class="section-subtitle">Featured Tours</p>
+
+          <h2 class="h2 section-title">Most Popular Tours</h2>
+
+          <ul class="popular-list">
+
+            <li>
+              <div class="popular-card">
+
+                <figure class="card-banner">
+                  <a href="#" title="Read more about the blog post">
+                    <img src="./assets/images/popular-1.jpg" width="740" height="518" loading="lazy"
+                      alt="Kuala Lumpur, Malaysia" class="img-cover">
+                  </a>
+
+                  <!-- <span class="card-badge">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="P12D">12 Days</time>
+                  </span> -->
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+                    <div class="card-price">From ₹5000</div>
+
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+
+                      <data value="2">(2)</data>
+                    </div>
+                  </div>
+
+                  <h3 class="card-title">
+                    <a href="#">Plan you Dubai trip and explore everything from golden deserts to futuristic skylines.</a>
+                  </h3>
+
+                  <address class="card-location">Dubai</address>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="popular-card">
+
+                <figure class="card-banner">
+                  <a href="#" title="Read more about the blog post">
+                    <img src="./assets/images/popular-2.jpg" width="740" height="518" loading="lazy"
+                      alt="Kuala Lumpur, Malaysia" class="img-cover">
+                  </a>
+
+                  <!-- <span class="card-badge">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="P12D">12 Days</time>
+                  </span> -->
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+                    <div class="card-price">From ₹5000</div>
+
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+
+                      <data value="2">(2)</data>
+                    </div>
+                  </div>
+
+                  <h3 class="card-title">
+                    <a href="#">Discover the beauty of Bali with your loved one, from peaceful beaches to romantic candlelit dinners.</a>
+                  </h3>
+
+                  <address class="card-location">Bali</address>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="popular-card">
+
+                <figure class="card-banner">
+                  <a href="#">
+                    <img src="./assets/images/popular-3.jpg" width="740" height="518" loading="lazy"
+                      alt="Kuala Lumpur, Malaysia" class="img-cover">
+                  </a>
+
+                  <!-- <span class="card-badge">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="P12D">12 Days</time>
+                  </span> -->
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+                    <div class="card-price">From ₹5000</div>
+
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+
+                      <data value="2">(2)</data>
+                    </div>
+                  </div>
+
+                  <h3 class="card-title">
+                    <a href="#">A land of stunning beaches, rich culture, and unforgettable adventures.</a>
+                  </h3>
+
+                  <address class="card-location">Thialand</address>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+      <a name="about"></a>
+      <section class="section about">
+        <div class="container">
+
+          <div class="about-content">
+
+            <p class="section-subtitle">About Us</p>
+
+            <h2 class="h2 section-title">Explore all tour of the world with us.</h2>
+
+            <p class="about-text">
+              Welcome to Every Sunday, a unique initiative designed to turn your Sundays into something extraordinary. We believe Sundays are more than just a day—they’re a chance to pause, reflect, and create meaningful moments that set the tone for the week ahead.
+            </p>
+
+            <ul class="about-list">
+
+              <li class="about-item">
+
+                <div class="about-item-icon">
+                  <ion-icon name="compass"></ion-icon>
+                </div>
+
+                <div class="about-item-content">
+                  <h3 class="h3 about-item-title">Tour guide</h3>
+
+                  <p class="about-item-text">
+                    Not just a tour—our guides deliver experiences that stay with you forever.
+                  </p>
+                </div>
+
+              </li>
+
+              <li class="about-item">
+
+                <div class="about-item-icon">
+                  <ion-icon name="briefcase"></ion-icon>
+                </div>
+
+                <div class="about-item-content">
+                  <h3 class="h3 about-item-title">Friendly price</h3>
+
+                  <p class="about-item-text">
+                    Travel Far, Pay Less—Let Your Wallet Relax Too!
+                  </p>
+                </div>
+
+              </li>
+
+              <li class="about-item">
+
+                <div class="about-item-icon">
+                  <ion-icon name="umbrella"></ion-icon>
+                </div>
+
+                <div class="about-item-content">
+                  <h3 class="h3 about-item-title">Reliable tour</h3>
+
+                  <p class="about-item-text">
+                    Explore with Confidence—Our Reliability is Your Comfort.
+                  </p>
+                </div>
+
+              </li>
+
+            </ul>
+
+            <a href="booking page.html" class="btn btn-primary">Booking Now</a>
+
+          </div>
+
+          <figure class="about-banner">
+            <img src="./assets/images/about-banner.png" width="756" height="842" loading="lazy" alt="" class="w-100">
+          </figure>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #BLOG
+      -->
+      <a name="blog"></a>
+      <section class="section blog">
+        <div class="container">
+
+          <p class="section-subtitle">From The Blog Post</p>
+
+          <h2 class="h2 section-title">Latest News & Articles</h2>
+
+          <ul class="blog-list">
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <img src="./assets/images/popular-1.jpg" width="740" height="518" loading="lazy"
+                      alt="A good traveler has no fixed plans and is not intent on arriving." class="img-cover">
+                  </a>
+
+                  <!-- <span class="card-badge">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="12-04">04 Dec</time>
+                  </span> -->
+
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+
+                    <div class="author-wrapper">
+                      <!-- <figure class="author-avatar">
+                        <img src="./assets/images/author-avatar.png" width="30" height="30" alt="Jony bristow">
+                      </figure> -->
+
+                      <!-- <div>
+                        <a href="#" class="author-name">Jony bristow</a>
+
+                        <p class="author-title">Admin</p>
+                      </div> -->
+                    </div>
+
+                    <!-- <time class="publish-time" datetime="10:30">10:30 AM</time> -->
+
+                  </div>
+
+                  <h3 class="card-title">
+                    <a href="#">
+                      From weekend escapes to far-flung destinations, Every Sunday makes it all possible. They handle the details so you can just enjoy the journey!
+                    </a>
+                  </h3>
+
+                  <a href="#" class="btn-link">
+                    <span>Read More</span>
+
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <img src="./assets/images/blog-2.jpg" width="740" height="518" loading="lazy"
+                      alt="A good traveler has no fixed plans and is not intent on arriving." class="img-cover">
+                  </a>
+
+                  <!-- <span class="card-badge">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <!-- <time datetime="12-04">04 Dec</time> -->
+                  <!-- </span> -->
+
+                </figure>
+
+                <div class="card-content">
+
+                  <!-- <div class="card-wrapper">
+
+                    <div class="author-wrapper">
+                      <figure class="author-avatar">
+                        <img src="./assets/images/author-avatar.png" width="30" height="30" alt="Jony bristow">
+                      </figure>
+
+                      <div>
+                        <a href="#" class="author-name">Jony bristow</a>
+
+                        <p class="author-title">Admin</p>
+                      </div>
+                    </div>
+
+                    <time class="publish-time" datetime="10:30">10:30 AM</time>
+
+                  </div> -->
+
+                  <h3 class="card-title">
+                    <Hey, Cortana. a href="#">
+                      Every Sunday made our weekend getaway perfect! We thought it was all about one-day trips, but they helped us plan a memorable.
+                  </h3>
+
+                  <a href="#" class="btn-link">
+                    <span>Read More</span>
+
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <img src="./assets/images/blog-3.jpg" width="740" height="518" loading="lazy"
+                      alt="A good traveler has no fixed plans and is not intent on arriving." class="img-cover">
+                  </a>
+
+                  <!-- <span class="card-badge">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="12-04">04 Dec</time>
+                  </span> -->
+
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+
+                    <div class="author-wrapper">
+                      <!-- <figure class="author-avatar">
+                        <img src="./assets/images/author-avatar.png" width="30" height="30" alt="Jony bristow">
+                      </figure> -->
+
+                      <!-- <div>
+                        <a href="#" class="author-name">Jony bristow</a>
+
+                        <p class="author-title">Admin</p>
+                      </div> -->
+                    </div>
+
+                    <!-- <time class="publish-time" datetime="10:30">10:30 AM</time> -->
+
+                  </div>
+
+                  <h3 class="card-title">
+                    <a href="#">
+                      Who knew every Sunday could turn into an amazing adventure? From local day trips to exotic international destination
+                  </h3>
+
+                  <a href="#" class="btn-link">
+                    <span>Read More</span>
+
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+    </article>
+  </main>
+
+  <!-- 
+    - #CONTACT
+  -->
+  <a name="Contact"></a>
+  <section class="section contact">
+    <div class="container">
+
+      <p class="section-subtitle">Contact Us</p>
+
+     
+
+      <form action="#" method="post" class="contact-form">
+
+        <div class="input-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="input-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Send Message</button>
+
+      </form>
+
+    </div>
+  </section>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer-top">
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Top destination</p>
+          </li>
+
+          <li>
+            <a href="https://www.google.com/search?q=malyasia+&sca_esv=2eef0e9e60f1ae53&ei=Fa5tZ4nvH_mC2roPzZPz2QU&ved=0ahUKEwjJzb-slcaKAxV5gVYBHc3JPFsQ4dUDCBA&uact=5&oq=malyasia+&gs_lp=Egxnd3Mtd2l6LXNlcnAiCW1hbHlhc2lhIDIOEAAYgAQYkQIYsQMYigUyDhAAGIAEGJECGLEDGIoFMgsQABiABBiRAhiKBTIREAAYgAQYkQIYsQMYgwEYigUyChAAGIAEGLEDGAoyEBAuGIAEGLEDGNEDGMcBGAoyChAAGIAEGLEDGAoyBxAAGIAEGAoyBxAAGIAEGAoyEBAuGIAEGLEDGNEDGMcBGApIxrYBUIytAViMrQFwBHgAkAEAmAHcAaABkgOqAQUwLjEuMbgBA8gBAPgBAZgCBaAC2gLCAgoQABiwAxjWBBhHwgINEAAYgAQYsAMYQxiKBcICDhAAGLADGOQCGNYE2AEBwgITEC4YgAQYsAMYQxjIAxiKBdgBAZgDAOIDBRIBMSBAiAYBkAYSugYGCAEQARgJkgcFNC4wLjGgB-Qc&sclient=gws-wiz-serp" class="footer-link">Indonesia, Jakarta</a>
+          </li>
+
+          <li>
+            <a href="https://www.livemoretravelmore.com/male-island-maldives-capital/" class="footer-link">Maldives, Malé</a>
+          </li>
+
+          <li>
+            <a href="https://canberra.com.au/study" class="footer-link">Australia, Canberra</a>
+          </li>
+
+          <li>
+            <a href="https://www.google.com/search?sca_esv=2eef0e9e60f1ae53&q=Thailand+pics&udm=2&fbs=AEQNm0DvD4UMlvdpwktgGj2ZHhIXAIHy0lF5HBdT5py_0SmcDRj-ZcG8sN4MPTI25WFYis4wl2w2HABIwzHTNHgs0XyvwBQ326rTyYqJYbg_1X6pmt2OKPouyxEdwTCL9hsaApO3FRLbqtkj9tDfgnXKaUvRe7AGx_xdZ-OvZau2lFn-u1kTzfVBNQnpFLBtYqyr8ThTATosP7fshT1I2Y9qykLFrVsXeA&sa=X&ved=2ahUKEwiitse1l8aKAxV6SWwGHSIFA0QQtKgLegQIExAB&biw=1536&bih=776&dpr=1.25" class="footer-link">Thailand, Bangkok</a>
+          </li>
+
+          <li>
+            <a href="https://www.google.com/search?sca_esv=2eef0e9e60f1ae53&q=Morocco,+Rabat&udm=2&fbs=AEQNm0Aa4sjWe7Rqy32pFwRj0UkWd8nbOJfsBGGB5IQQO6L3J5m2RNdZ7TqBBDB_EAGU4N1KmHmEYoxnGi716uJtDrT4BejLFemESLcx0_AxYgHtu8eacEg_PQPBKp4WA_phPl-jYzFD0o48MpfGkty9-I6wrDPuX3Nge7TBIQMA-QMTzM83rds08HKway8tTUMlCatoUAtHMlWN5gA_8qus_baBSuN6VQ&sa=X&ved=2ahUKEwiG-eLEl8aKAxVYSWwGHR0_KgQQtKgLegQIGRAB&biw=1536&bih=776&dpr=1.25" class="footer-link">Morocco, Rabat</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Categories</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Travel</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Lifestyle</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Fashion</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Education</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Food & Drink</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Quick links</p>
+          </li>
+
+          <li>
+            <a href="#about" class="footer-link">About</a>
+          </li>
+
+          <li>
+            <a href="#Contact" class="footer-link">Contact</a>
+          </li>
+
+          <li>
+            <a href="#Tours" class="footer-link">Tours</a>
+          </li>
+
+          <li>
+            <a href="booking page.html" class="footer-link">Booking</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Terms & Conditions</a>
+          </li>
+
+        </ul>
+
+        <div class="footer-list">
+
+          <p class="footer-list-title">Get a newsletter</p>
+
+          <p class="newsletter-text">
+            For the latest deals and tips, travel no further than your inbox
+          </p>
+
+          <form action="" class="newsletter-form">
+            <input type="email" name="email" required placeholder="Email address" class="newsletter-input">
+
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <a href="#" class="logo">Every Sunday</a>
+
+        <!-- <p class="copyright">
+          &copy; 2024 <a href="#" class="copyright-link">everysunday</a>. All Rights Reserved
+        </p> -->
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link" title="Facebook">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link" title="Twitter">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link" title="Instagram">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link" title="LinkedIn">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link" title="Google">
+              <ion-icon name="logo-google"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+
+    
+  </footer>
+  <!-- 
+    - #DEPLOYMENT INSTRUCTIONS
+  -->
+  <script>
+    // Deployment instructions for GitHub Pages
+    // 1. Push your code to a GitHub repository.
+    // 2. Go to the repository settings.
+    // 3. Scroll down to the "GitHub Pages" section.
+    // 4. Select the branch you want to deploy from (usually "main" or "master").
+    // 5. Click "Save".
+    // Your site will be published at https://<username>.github.io/<repository-name>/
+  </script>
+
+
+
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top" data-go-top aria-label="Go To Top">
+    <ion-icon name="chevron-up-outline"></ion-icon>
+  </a>
+
+  
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script>
+    function openRegisterForm() {
+      document.getElementById("registerForm").style.display = "block";
+    }
+    function closeRegisterForm() {
+      document.getElementById("registerForm").style.display = "none";
+    }
+  </script> 
+
+
+</body>
+
+</html>
