@@ -1,0 +1,116 @@
+
+    <title>Booking Page</title>
+    <style>
+   
+body {
+  background-image: url('assets/images/desktop.png');
+  background-size: cover;
+  background-position: center;
+}
+  body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+  }
+  .booking-form {
+      background: darkcyan;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 300px;
+  }
+  .booking-form h2 {
+      margin-bottom: 20px;
+      font-size: 24px;    
+      text-align: center;
+  }
+  .booking-form .form-group {
+      margin-bottom: 15px;
+  }
+  .booking-form .form-group label {
+      display: block;
+      margin-bottom: 5px;
+  }
+  .booking-form .form-group input,
+  .booking-form .form-group select {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+  }
+  .booking-form .form-group button {
+      width: 100%;
+      padding: 10px;
+      background: #007BFF;
+      border: none;
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 4px;
+  }
+  .booking-form .form-group button:hover {
+      background: #0056b3;
+  }
+    </style> 
+</head>
+<body>
+    <div class="booking-form">
+        <h2>Booking Form</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="destination">Destination</label>
+                <select id="destination" name="destination" required>
+                    <option value="paris">Paris</option>
+                    <option value="new-york">New York</option>
+                    <option value="tokyo">Tokyo</option>
+                    <option value="london">London</option>
+                    <option value="sydney">Sydney</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group"></div>
+            <div class="form-group">
+                <label for="time">Time</label>
+                <input type="time" id="time" name="time" required>
+            </div>
+            <div class="form-group">
+                <label for="guests">Number of Guests</label>
+                <select id="guests" name="guests" required>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <button type="submit" formaction="index.html">Book Now</button>
+            <!-- Now</button><button type="submit" onclick="window.location.href='index.html'">Book  -->
+            </div>
+        </form>
+    </div>
